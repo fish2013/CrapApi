@@ -128,7 +128,7 @@ public abstract class BaseController<T extends BaseModel> {
 	}
 
 	protected void printMsg(String message) {
-		response.setHeader("Content-Type", "text/html");
+		response.setHeader("Content-Type", "application/json");
 		response.setCharacterEncoding("utf-8");
 		try {
 			PrintWriter out = response.getWriter();
